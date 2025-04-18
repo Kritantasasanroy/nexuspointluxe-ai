@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NexusPointLuxe Styling AI</title>
+  <!-- Google Fonts: Playfair Display & Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="assistant-container">
+    <header>
+      <img src="Red_logo_wo_bg.avif" alt="Nexus Point Luxe Logo" class="npl-logo">
+      <span class="assistant-title">NexusPointLuxe AI</span>
+    </header>
+    <main>
+      <div class="assistant-card">
+        <div>
+          <div class="assistant-message">
+            <span>Curated, sustainable luxury.<br>What timeless look can I help you create today?</span>
+          </div>
+        </div>
+      </div>
+      <div class="quick-actions">
+        <button class="quick-btn" onclick="fillForm('casual')">Casual Outfit</button>
+        <button class="quick-btn" onclick="fillForm('office')">Office Look</button>
+        <button class="quick-btn" onclick="fillForm('evening')">Evening Style</button>
+        <button class="quick-btn" onclick="fillForm('getaway')">Getaway Wardrobe</button>
+        <button class="quick-btn" onclick="fillForm('random')">Random Fun</button>
+      </div>
+      <form id="styleForm" class="assistant-form">
+        <select id="occasion" required>
+          <option value="" disabled selected>Select Occasion</option>
+          <option value="casual">Casual</option>
+          <option value="office">Office</option>
+          <option value="evening">Evening</option>
+          <option value="getaway">Getaway</option>
+        </select>
+        <input type="number" id="temperature" placeholder="Temperature (°C)" required>
+        <select id="color_vibe" required>
+          <option value="" disabled selected>Select Color Vibe</option>
+          <option value="neutrals">Neutrals</option>
+          <option value="brights">Brights</option>
+          <option value="pastels">Pastels</option>
+        </select>
+        <select id="budget" required>
+          <option value="" disabled selected>Select Budget</option>
+          <option value="standard">Standard</option>
+          <option value="premium">Premium</option>
+        </select>
+        <button type="submit" class="submit-btn">Get Outfit Ideas</button>
+      </form>
+      <div id="results"></div>
+    </main>
+    <footer>
+      <div class="footer-msg">
+        Sustainable luxury, natural materials, designed for longevity.
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

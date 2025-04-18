@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #fff;
+    color: #1a1f39;
+  }
+  
+  .assistant-container {
+    max-width: 430px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+  }
+  
+  header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 1.2rem 0 0.8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .npl-logo {
+    height: 44px;
+    width: auto;
+    margin-right: 1rem;
+    border-radius: 8px;
+    background: #fff0;
+    box-shadow: 0 2px 8px rgba(191,161,108,0.12);
+  }
+  
+  .assistant-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #9e1b32;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+  }
+  
+  .assistant-card {
+    background: #f2f1f1;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.153);
+    padding: 1.2rem 1.4rem;
+    margin: 1.2rem 0 0.8rem 0;
+    width: 100%;
+    max-width: 370px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .assistant-message {
+    color: #1a1f39;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.12rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+  
+  .quick-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .quick-btn {
+    background: #fff;
+    color: #9e1b32;
+    border: 1.5px solid #9e1b32;
+    border-radius: 2rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.97rem;
+    margin-bottom: 0.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .quick-btn:hover {
+    background: #9e1b32;
+    color: #fff;
+  }
+  
+  .assistant-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto 1.2rem auto;
+  }
+  
+  .assistant-form input,
+  .assistant-form select,
+  .feedback-box {
+    background: #faf9f7;
+    border: 1.5px solid #bfa16c;
+    border-radius: 1.1rem;
+    color: #1a1f39;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(191,161,108,0.06);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  .assistant-form select {
+    background-image: url("data:image/svg+xml;charset=UTF-8,<svg fill='%239e1b32' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+  }
+  
+  .assistant-form input::placeholder,
+  .assistant-form select:invalid,
+  .feedback-box::placeholder {
+    color: #bfa16c;
+    opacity: 1;
+  }
+  
+  .submit-btn {
+    background: #9e1b32;
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.65rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.4rem;
+    box-shadow: 0 2px 8px rgba(191,161,108,0.10);
+    transition: background 0.2s;
+    letter-spacing: 1px;
+  }
+  .submit-btn:hover {
+    background: #bfa16c;
+    color: #1a1f39;
+  }
+  
+  #results .card {
+    background: #faf9f7;
+    border-radius: 1.1rem;
+    color: #1a1f39;
+    margin: 0.7rem 0;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(191,161,108,0.10);
+    border: 1.5px solid #bfa16c;
+  }
+  
+  .like-btn {
+    background: #9e1b32;
+    color: #fff;
+    border: none;
+    border-radius: 1.2rem;
+    padding: 0.3rem 1.1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.6rem;
+    margin-right: 0.7rem;
+    transition: background 0.2s;
+    font-weight: 600;
+  }
+  .like-btn:hover {
+    background: #bfa16c;
+    color: #1a1f39;
+  }
+  
+  .dislike-btn {
+    background: #bfa16c;
+    color: #1a1f39;
+    border: none;
+    border-radius: 1.2rem;
+    padding: 0.3rem 1.1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.6rem;
+    transition: background 0.2s;
+    font-weight: 600;
+  }
+  .dislike-btn:hover {
+    background: #9e1b32;
+    color: #fff;
+  }
+  
+  .feedback-box {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    resize: none;
+  }
+  
+  .feedback-btn {
+    background: #9e1b32;
+    color: #fff;
+    border: none;
+    border-radius: 1.2rem;
+    padding: 0.3rem 1.1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.2rem;
+    transition: background 0.2s;
+    font-weight: 600;
+  }
+  .feedback-btn:hover {
+    background: #bfa16c;
+    color: #1a1f39;
+  }
+  
+  .footer-msg {
+    text-align: center;
+    color: #bfa16c;
+    font-size: 0.95rem;
+    padding: 1.1rem 0 0.6rem 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  @media (max-width: 500px) {
+    .assistant-container {
+      max-width: 98vw;
+      padding: 0 2vw;
+    }
+    .assistant-card, .assistant-form {
+      max-width: 98vw;
+    }
+  }
+  
